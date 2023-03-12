@@ -13,8 +13,8 @@
 .header__lang-link:last-child {
   right: 0px;
 }
-.header__lang-link:hover {
-  border-bottom: 2px #FFF solid;
+.header__lang-link:hover {  
+  opacity: 0.8;
 }
 @media screen and (max-width: 767px) {
   .header__lang-link {

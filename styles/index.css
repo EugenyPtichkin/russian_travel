@@ -21,5 +21,5 @@
   flex-direction: column;
   align-items: center;
   
-  overflow: hidden; /*борьба с уменьшением окна на 16px chrome/yandex, не 20px в edge при максимаьлном разрешении*/
+  overflow: hidden;  /*борьба с уменьшением окна на 16px chrome/yandex, на 20px в edge при максимаьлном разрешении*/
 }
