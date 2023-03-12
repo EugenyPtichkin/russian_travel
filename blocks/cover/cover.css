@@ -1,0 +1,27 @@
+.cover { 
+  margin: 0;
+  padding: 0px 48px 92px 48px;
+  width: calc(1280px - 2*48px);
+  height: 740px;
+}
+@media screen and (max-width: 1279px) {
+  .cover {
+    padding: 0px 0px 92px 0px;
+    width: 90vw;
+    height: calc((640/1024)*90vw); 
+  }
+}
+@media screen and (max-width: 1023px) {
+  .cover {
+    padding: 0px 0px 88px 0px;
+    width: 90vw;
+   height: calc((480/768)*90vw);  
+  }
+}
+@media screen and (max-width: 767px) {
+  .cover {
+    padding: 0px 0px 64px 0px;
+    width: max(320px, 90vw);
+    height: max(200px, calc( (200/320) *  90vw )); 
+  }
+}
