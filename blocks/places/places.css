@@ -1,24 +1,31 @@
 .places {
   margin: 0;
-  padding: 0px 148px 92px 148px;
+  padding: 0px 148px 92px;
   display: grid;
   grid-template-columns: 1fr;
   row-gap: 80px; 
 }
+/* борьба с вылезающими гридами за 24px до максимального размера 
+за размер экрана за счет уменьшения паддингов слева и справа на 12px*/
+@media screen and (min-width: 1280px) and (max-width: 1302px) {
+  .places { 
+    padding: 0px 136px 92px; /* 148px-24px/2=136px */
+  }
+}
 @media screen and (max-width: 1279px) {
   .places {
-    padding: 0px 48px 92px 48px;
+    padding: 0px 48px 92px;
   }
 }
 @media screen and (max-width: 1023px) {
   .places {
-    padding: 0px 24px 90px 24px;
+    padding: 0px 24px 90px;
     row-gap: 73px; 
   }
 }
 @media screen and (max-width: 767px) {
   .places {
-    padding: 0px 0px 66px 0px;
+    padding: 0px 0px 66px;
     row-gap: 50px; 
   }
 }

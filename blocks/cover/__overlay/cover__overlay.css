@@ -6,22 +6,25 @@
   flex-direction: column; 
   align-items: center; 
   width: 100%;
-  height: 100%
-   }
-.cover__overlay::before { /* нашел решение через дополнительный слой тут: https://timeweb.cloud/tutorials/css-html/izmenenie-prozrachnosti-fonovogo-izobrazheniya-css */ 
-  margin: 0;
-  padding: 0;
+  height: 100%;
   background-image: url(../../../images/cover_background.jpg);
   background-size: cover;
+  background-position: center center;
+  text-decoration: none;
 
-  content: ""; /* чтобы отображался блок ::before */  
-  position: absolute;
-  top: 0; /* чтобы не схлопывался блок ::before */
+   }
+.cover__overlay::before { 
+  background-color: #2A2C2F;
+  margin: 0;
+  padding: 0;
+  content: "";  /* чтобы отображался блок ::before */  
+  position: absolute; 
+  top: 0;  /* чтобы не схлопывался блок ::before */
   right: 0;
   bottom: 0;
-  left: 0;
-  opacity: 0.8; 
+  left: 0; 
+  opacity: 0.3;
 }
 .cover__overlay:hover::before {  
-  opacity: 0.3; 
+  opacity: 0.8;
 }

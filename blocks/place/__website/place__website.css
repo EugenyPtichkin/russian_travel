@@ -1,12 +1,7 @@
 .place__website {
   margin: 0;
   padding: 0;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-@media screen and (max-width: 767px) {
-  .place__website {
-    position: relative;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
 }

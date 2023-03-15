@@ -2,8 +2,7 @@
   margin: 0;
   padding: 0;
   padding-bottom: 32px;
-  width: 720px;
-  height: 200px;
+  max-width: 720px;
   color: #FFF;
   font-weight: 900;
   font-size: 96px;
@@ -13,9 +12,11 @@
 @media screen and (max-width: 767px) {
   .lead__title {
     padding-bottom: 16px;
-    width: 288px;
-    height: 88px;
+    max-width: 288px;
     font-size: 40px;
-    line-height: 44px;  
+    line-height: 44px;
+/*  max-width: calc(288px + 432*(100vw - 320px)/448);*/ /*288px + (720px-288px)*(100vw-320px)/(768px-320px)*/
+/*  font-size: calc(40px + 56*(100vw - 320px)/448);*/   /*40px + (96px-40px)*(100vw-320px)/(768px-320px)*/
+/*  line-height: calc(44px + 56*(100vw - 320px)/448);*/ /*44px + (100px-44px)*(100vw-320px)/(768px-320px)*/
   }
 }
