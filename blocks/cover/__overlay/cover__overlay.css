@@ -5,9 +5,10 @@
   display: flex;
   flex-direction: column; 
   align-items: center; 
-/*justify-content: center;*/ /*к сожалению не растягивает background-image*/
+  justify-content: center; /*не растягивает background-image*/
   width: 100%;
   height: 100%;
+  min-height: calc(1184px/1.6);/*растягивает background-image!*/
   background-image: url(../../../images/cover_background.jpg);
   background-size: cover;
   background-position: center center;
@@ -28,4 +29,22 @@
 }
 .cover__overlay:hover::before {  
   opacity: 0.8;
+}
+
+@media screen and (max-width: 1279px) {
+  .cover__overlay {
+    min-height: calc(100vw/1.6);
+/*    padding-bottom: calc(195px + 50*(100vw - 1024px)/256);*/ /* 195px+(245px-195px)*(100%-1024px)/(1280px-1024px) */
+  }
+}
+/*@media screen and (max-width: 1023px) {
+  .cover__overlay {
+    padding-bottom: calc(115px + 80*(100vw - 768px)/256);*/ /* 115px+(195px-115px)*(100%-768px)/(1024px-768px) */    
+/*  }
+}*/
+@media screen and (max-width: 767px) {
+  .cover__overlay {
+    min-height: max(calc(320px/1.6), calc(100vw/1.6));
+/*    padding-bottom: max(33px, calc(33px + 82*(100vw - 320px)/448));*/ /* 33px+(115px-33px)*(100%-320px)/(768px-320px)  */    
+  }
 }

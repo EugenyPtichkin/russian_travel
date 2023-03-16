@@ -9,11 +9,11 @@
 }
 /* борьба с вылезающими гридами за 24px до максимального размера 
 за размер экрана за счет уменьшения паддингов слева и справа на 12px*/
-@media screen and (min-width: 1280px) and (max-width: 1302px) {
+/*@media screen and (min-width: 1280px) and (max-width: 1302px) {
   .cover { 
-    padding: 0px 36px 92px; /* 48px-24px/2=36px */
-  }
-}
+    padding: 0px 36px 92px;*/ /* 48px-24px/2=36px */
+/*  }
+}*/
 @media screen and (max-width: 1279px) {
   .cover {
     padding: 0px 0px 92px 0px;
