@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   max-width: 560px;
-  padding-top: 245px; /*убрать padding-top здесь и padding-bottom для cover-subtitle не могу, поскольку теперь без фиксированной высоты блока они определяют высоту cover для умещения всей высоты background-image*/
+/*  padding-top: 245px;*/ /*убрать padding-top здесь и padding-bottom для cover-subtitle не могу, поскольку теперь без фиксированной высоты блока они определяют высоту cover для умещения всей высоты background-image*/
   font-weight: 900;
   font-size: 72px;
   line-height: 76px; 
@@ -12,18 +12,18 @@
 }
 @media screen and (max-width: 1279px) {
   .cover__title {
-    padding-top: calc(195px + 50*(100vw - 1024px)/256); /* 195px+(245px-195px)*(100%-1024px)/(1280px-1024px) */ 
+/*    padding-top: calc(195px + 50*(100vw - 1024px)/256);*/ /* 195px+(245px-195px)*(100%-1024px)/(1280px-1024px) */ 
   }
 }
 @media screen and (max-width: 1023px) {
   .cover__title {
-      padding-top: calc(115px + 80*(100vw - 768px)/256); /* 115px+(195px-115px)*(100%-768px)/(1024px-768px) */
+/*      padding-top: calc(115px + 80*(100vw - 768px)/256);*/ /* 115px+(195px-115px)*(100%-768px)/(1024px-768px) */
   }
 }
 @media screen and (max-width: 767px) {
   .cover__title {
     max-width: max(288px, calc(288px + 272*(100vw - 320px)/448));/* 288px+(560px-288px)*(100%-320px)/(768px-320px)*/
-    padding-top: max(33px, calc(33px + 82*(100vw - 320px)/448)); /* 33px+(115px-33px)*(100%-320px)/(768px-320px)  */
+/*    padding-top: max(33px, calc(33px + 82*(100vw - 320px)/448));*/ /* 33px+(115px-33px)*(100%-320px)/(768px-320px)  */
     font-size: max(32px, calc(32px + 44*(100vw - 320px)/448));   /* 32px+(76px-32px)*(100%-320px)/(768px-320px)   */    
     line-height: max(35px, calc(35px + 41*(100vw - 320px)/448)); /* 35px+(76px-35px)*(100%-320px)/(768px-320px)   */    
 
