@@ -5,6 +5,7 @@
   display: flex;
   flex-direction: column; 
   align-items: center; 
+/*justify-content: center;*/ /*к сожалению не растягивает background-image*/
   width: 100%;
   height: 100%;
   background-image: url(../../../images/cover_background.jpg);

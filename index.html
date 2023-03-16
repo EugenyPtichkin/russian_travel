@@ -14,8 +14,10 @@
     <!-- HEADER -->
     <header class="header">
       <img class="header__logo" src="./images/__logo.svg" alt="логотип Россия">
-      <a class="header__lang-link header__lang-link_active" href="./index.html">Ru</a>
-      <a class="header__lang-link" href="./index_en.html">En</a>
+      <ul class="header__links">
+        <li class="header__list"><a class="header__lang-link header__lang-link_active" href="./index.html">Ru</a></li>
+        <li class="header__list"><a class="header__lang-link" href="./index_en.html">En</a></li>
+      </ul>
     </header>
 
     <!-- LEAD -->
@@ -48,7 +50,7 @@
     </section>
     
     <!-- PHOTO GRID --> 
-    <section class="photo-grid" area-label="photo grid">
+    <section class="photo-grid" aria-label="photo grid">
       <ul class="photo-grid-list">
         <li class="photo-grid-list__item"> <img class="photo-grid__item" src="./images/photo-grid__item_1.jpg" alt="окно поезда"> </li>
         <li class="photo-grid-list__item"> <img class="photo-grid__item" src="./images/photo-grid__item_2.jpg" alt="вулкан"> </li>
@@ -154,7 +156,7 @@
     </section>        
 
     <!-- COVER -->
-    <section class="cover" area-label="cover">
+    <section class="cover" aria-label="cover">
       <a class="cover__overlay" href="https://stampsy.com/na-elektrichkakh-do-baikala">
         <h2 class="cover__title" >До Байкала «на собаках»</h2>
         <p class="cover__subtitle">По мотивам учебной темы о Транссибе — путешествие от столицы до Байкала на электричках.</p>      
@@ -162,16 +164,18 @@
     </section>
 
     <!-- FOOTER -->
-    <nav class="footer">
-      <ul class="footer__list">
-        <li><a class="footer__link" href="https://yandex.ru/maps">Карты</a></li>
-        <li><a class="footer__link" href="https://yandex.ru/pogoda">Погода</a></li>
-        <li><a class="footer__link" href="https://rasp.yandex.ru">Расписание</a></li>
-        <li><a class="footer__link" href="https://calendar.yandex.ru">Календарь</a></li>
-        <li><a class="footer__link" href="https://travel.yandex.ru">Путешествия</a></li>
-      </ul>
-      <p class="footer__copyright">&copy; 2023. Евгений Птичкин</p>
-    </nav>   
+    <footer class="footer">
+      <nav class="footer__nav">
+        <ul class="footer__list">
+          <li><a class="footer__link" href="https://yandex.ru/maps">Карты</a></li>
+          <li><a class="footer__link" href="https://yandex.ru/pogoda">Погода</a></li>
+          <li><a class="footer__link" href="https://rasp.yandex.ru">Расписание</a></li>
+          <li><a class="footer__link" href="https://calendar.yandex.ru">Календарь</a></li>
+          <li><a class="footer__link" href="https://travel.yandex.ru">Путешествия</a></li>
+        </ul>
+        <p class="footer__copyright">&copy; 2023. Евгений Птичкин</p>
+      </nav>
+    </footer>   
    
   </div>  
 </body>

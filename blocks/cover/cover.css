@@ -3,9 +3,9 @@
   padding: 0px 48px 92px;
   max-width: calc(1280px - 2*48px);
   width: 100%;
-  height: calc(100vw/1.6);
-  max-height: 740px;
-  min-height: 200px;  
+/*height: calc(100vw/1.6);*/
+/*max-height: 740px;*/
+/*min-height: 200px;*/
 }
 /* борьба с вылезающими гридами за 24px до максимального размера 
 за размер экрана за счет уменьшения паддингов слева и справа на 12px*/
@@ -17,20 +17,21 @@
 @media screen and (max-width: 1279px) {
   .cover {
     padding: 0px 0px 92px 0px;
-    max-width: calc(100vw - 23px);
-    max-height: calc((640/1024)*(100vw - 23px));
+  /*max-width: calc(100vw - 23px);*/
+  /*max-height: calc((640/1024)*(100vw - 23px));*/
   }
 }
 @media screen and (max-width: 1023px) {
   .cover {
     padding: 0px 0px 88px 0px;
-    max-height: calc((480/768)*(100vw - 23px));
+  /*max-height: calc((480/768)*(100vw - 23px));*/
   }
 }
 @media screen and (max-width: 767px) {
   .cover {
     padding: 0px 0px 64px 0px;
-    max-width: max(320px, calc(100vw - 23px));
-    max-height: max(200px, calc((200/320)*(100vw - 23px)));
+    max-width: max(320px, 100%);
+  /*max-width: max(320px, calc(100vw - 23px));*/
+  /*max-height: max(200px, calc((200/320)*(100vw - 23px)));*/
   }
 }

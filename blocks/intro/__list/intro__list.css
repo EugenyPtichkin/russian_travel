@@ -8,3 +8,13 @@
   padding-bottom: 92px;
   list-style-type: none;
 }
+@media screen and (max-width: 1023px) {
+  .intro__list {
+    padding-bottom: 88px; /*исправлен отсуп intro->photo-grid на vw=768-1023px*/
+  }
+}
+@media screen and (max-width: 767px) {
+  .intro__list {
+    padding-bottom: 64px; /*исправлен отсуп intro->photo-grid на vw=320-767px*/
+  }
+}

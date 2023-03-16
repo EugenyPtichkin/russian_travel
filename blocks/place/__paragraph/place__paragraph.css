@@ -7,6 +7,13 @@
   line-height: 163%;   
   color: #FFF;
 }
+/*убрал лишний отступ снизу у последнего параграфа -
+вылезал при высоте текста большей чем у изображения*/
+/*=> исправлены отступы между place секции places на vw=320..1023px*/
+/*=> исправлены отступы между секциями places и cover на vw=320..1023px*/
+.place__paragraph:last-child {
+  padding-bottom: 0px; 
+}
 @media screen and (max-width: 1023px) {
   .place__paragraph {
     padding-bottom: 25px;

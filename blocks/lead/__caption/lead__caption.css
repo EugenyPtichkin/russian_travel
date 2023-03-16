@@ -1,6 +1,7 @@
 .lead__caption {
   margin: 0;
   padding: 0;
+  padding-left: 148px;    /*отступ слева lead__caption на view-width>=1280px*/
   padding-bottom: 92px; 
   color: #FFF;
   font-size: 10px;
@@ -9,13 +10,20 @@
   text-transform: uppercase;
   align-self: start;
 }
+@media screen and (max-width: 1279px) {
+  .lead__caption {
+    padding-left: 48px;  /*отступ слева lead__caption на view-width=1024..1279px*/
+  }
+}
 @media screen and (max-width: 1023px) {
   .lead__caption {
+    padding-left: 24px; /*отступ слева lead__caption на view-width=768..1023px*/
     padding-bottom: 88px; 
   }
 }
 @media screen and (max-width: 767px) {
   .lead__caption {
+    padding-left: 16px; /*отступ слева lead__caption на view-width=320..767px*/
     padding-bottom: 64px; 
   }
 }
